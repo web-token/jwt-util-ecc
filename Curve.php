@@ -15,11 +15,11 @@ use Stringable;
 final class Curve implements Stringable
 {
     public function __construct(
-        private int $size,
-        private BigInteger $prime,
-        private BigInteger $a,
-        private BigInteger $b,
-        private Point $generator
+        private readonly int $size,
+        private readonly BigInteger $prime,
+        private readonly BigInteger $a,
+        private readonly BigInteger $b,
+        private readonly Point $generator
     ) {
     }
 
